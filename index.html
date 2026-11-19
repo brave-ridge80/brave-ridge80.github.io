@@ -1,0 +1,1664 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>悠宝三岁全集 - 亲子成长影像品牌 | 官方记录每一刻</title>
+<meta name="description" content="悠宝三岁全集官方网站，专注三岁儿童亲子成长影像记录的品牌视频门户，汇集原创家庭日常、成长故事与创作者社区，持续陪伴每个家庭。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f97362'/%3E%3Ccircle cx='32' cy='26' r='12' fill='%23fff3e6'/%3E%3Cpath d='M20 60c0-9 5.4-16 12-16s12 7 12 16z' fill='%23fff3e6'/%3E%3C/svg%3E">
+<style>
+:root{
+  --yb-coral:#f97362;
+  --yb-coral-deep:#e2523f;
+  --yb-cream:#fff8f0;
+  --yb-amber:#f6b93b;
+  --yb-ink:#2f2a2e;
+  --yb-sub:#6f6670;
+  --yb-line:#f0e2d6;
+  --yb-card:#ffffff;
+  --yb-mint:#4fb6a4;
+  --yb-shadow:0 10px 30px rgba(226,82,63,.10);
+  --yb-radius:18px;
+  --yb-head-h:64px;
+  --yb-notice-h:40px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,sans-serif;
+  background:var(--yb-cream);
+  color:var(--yb-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  scroll-padding-top:calc(var(--yb-notice-h) + var(--yb-head-h) + 12px);
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+.yb-wrap{width:min(1180px,92vw);margin:0 auto}
+section{scroll-margin-top:calc(var(--yb-notice-h) + var(--yb-head-h) + 12px)}
+
+/* ============ 吸顶区：公告 + 页头 ============ */
+.yb-topfixed{position:sticky;top:0;z-index:120}
+.yb-notice{
+  background:linear-gradient(90deg,#e2523f,#f97362 45%,#f6b93b);
+  color:#fff;font-size:13px;letter-spacing:.3px;
+}
+.yb-notice .yb-wrap{display:flex;align-items:center;gap:10px;height:var(--yb-notice-h);overflow:hidden}
+.yb-notice-badge{
+  flex:0 0 auto;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.5);
+  border-radius:999px;padding:1px 9px;font-size:11px;font-weight:600;
+}
+.yb-notice-track{display:flex;gap:34px;white-space:nowrap;animation:ybSlide 26s linear infinite}
+.yb-notice-track span{opacity:.95}
+.yb-notice-track b{font-weight:600}
+@keyframes ybSlide{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.yb-head{
+  background:rgba(255,248,240,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--yb-line);
+}
+.yb-head .yb-wrap{display:flex;align-items:center;gap:18px;height:var(--yb-head-h)}
+.yb-logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.yb-logo-mark{
+  width:38px;height:38px;border-radius:12px;display:grid;place-items:center;
+  background:linear-gradient(140deg,var(--yb-coral),var(--yb-amber));
+  color:#fff;font-weight:800;font-size:17px;box-shadow:0 6px 14px rgba(249,115,98,.35);
+}
+.yb-logo-txt strong{display:block;font-size:17px;letter-spacing:.5px;line-height:1.2}
+.yb-logo-txt em{font-style:normal;font-size:11px;color:var(--yb-sub);letter-spacing:2px}
+.yb-nav{display:flex;gap:4px;margin-left:8px;flex:1 1 auto}
+.yb-nav a{
+  padding:6px 12px;border-radius:10px;font-size:14.5px;color:#4a4247;
+  transition:.2s;font-weight:500;
+}
+.yb-nav a:hover{background:#ffe9e0;color:var(--yb-coral-deep)}
+.yb-head-actions{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.yb-search{position:relative;display:flex;align-items:center}
+.yb-search input{
+  width:180px;height:38px;border-radius:999px;border:1px solid var(--yb-line);
+  background:#fff;padding:0 38px 0 14px;font-size:13.5px;color:var(--yb-ink);
+  outline:none;transition:.25s;
+}
+.yb-search input:focus{width:230px;border-color:var(--yb-coral);box-shadow:0 0 0 4px rgba(249,115,98,.12)}
+.yb-search button{
+  position:absolute;right:5px;width:30px;height:30px;border-radius:50%;
+  display:grid;place-items:center;background:var(--yb-coral);color:#fff;font-size:14px;
+}
+.yb-search-tip{
+  position:absolute;top:46px;left:0;right:0;background:#fff;border:1px solid var(--yb-line);
+  border-radius:12px;box-shadow:var(--yb-shadow);font-size:12.5px;color:var(--yb-sub);
+  padding:8px 12px;display:none;
+}
+.yb-search-tip.is-on{display:block}
+.yb-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  height:40px;padding:0 20px;border-radius:999px;font-size:14px;font-weight:600;
+  transition:.22s;white-space:nowrap;
+}
+.yb-btn-main{background:linear-gradient(135deg,var(--yb-coral),var(--yb-coral-deep));color:#fff;box-shadow:0 8px 18px rgba(226,82,63,.28)}
+.yb-btn-main:hover{transform:translateY(-2px);box-shadow:0 12px 22px rgba(226,82,63,.36)}
+.yb-btn-ghost{border:1.5px solid #f5c9ba;color:var(--yb-coral-deep);background:#fff}
+.yb-btn-ghost:hover{background:#fff1eb;transform:translateY(-2px)}
+.yb-burger{display:none;width:40px;height:40px;border-radius:12px;border:1px solid var(--yb-line);background:#fff;font-size:18px}
+
+.yb-mobile-nav{display:none;background:#fff;border-bottom:1px solid var(--yb-line)}
+.yb-mobile-nav.is-open{display:block}
+.yb-mobile-nav a{display:block;padding:11px 22px;border-top:1px solid #f7ece4;font-size:14.5px}
+
+/* ============ 首屏 ============ */
+.yb-hero{padding:52px 0 30px;position:relative;overflow:hidden}
+.yb-hero::before{
+  content:"";position:absolute;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(246,185,59,.30),transparent 68%);
+  top:-180px;right:-140px;pointer-events:none;
+}
+.yb-hero::after{
+  content:"";position:absolute;width:420px;height:420px;border-radius:50%;
+  background:radial-gradient(circle,rgba(249,115,98,.20),transparent 70%);
+  bottom:-220px;left:-140px;pointer-events:none;
+}
+.yb-hero-grid{display:grid;grid-template-columns:1fr 1.02fr;gap:46px;align-items:center;position:relative;z-index:2}
+.yb-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--yb-line);
+  border-radius:999px;padding:5px 14px;font-size:12.5px;color:var(--yb-coral-deep);
+  font-weight:600;box-shadow:0 4px 12px rgba(226,82,63,.08);
+}
+.yb-hero-badge i{width:7px;height:7px;border-radius:50%;background:var(--yb-mint);display:inline-block;animation:ybPulse 1.8s infinite}
+@keyframes ybPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+h1.yb-h1{
+  font-size:clamp(34px,4.4vw,56px);line-height:1.16;margin:16px 0 10px;
+  letter-spacing:1px;font-weight:800;color:var(--yb-ink);
+}
+h1.yb-h1 span{color:var(--yb-coral-deep)}
+.yb-hero-slogan{font-size:19px;font-weight:600;color:#443b40;margin-bottom:14px}
+.yb-hero-slogan em{font-style:normal;color:var(--yb-coral-deep)}
+.yb-hero-desc{font-size:14.8px;color:var(--yb-sub);max-width:520px}
+.yb-hero-btns{display:flex;gap:12px;margin:24px 0 26px;flex-wrap:wrap}
+.yb-stats{display:flex;gap:30px;flex-wrap:wrap}
+.yb-stat b{display:block;font-size:26px;color:var(--yb-coral-deep);line-height:1.2}
+.yb-stat span{font-size:12.5px;color:var(--yb-sub)}
+.yb-hero-visual{position:relative}
+.yb-hero-cover{
+  border-radius:26px;overflow:hidden;box-shadow:0 24px 50px rgba(226,82,63,.22);
+  border:6px solid #fff;position:relative;aspect-ratio:16/11;background:#ffd9c9;
+}
+.yb-hero-cover svg{width:100%;height:100%;display:block}
+.yb-hero-float{
+  position:absolute;background:#fff;border-radius:16px;padding:10px 15px;
+  box-shadow:0 14px 30px rgba(47,42,46,.14);font-size:12.5px;font-weight:600;
+}
+.yb-hero-float.f1{left:-16px;bottom:34px;color:var(--yb-mint)}
+.yb-hero-float.f2{right:-10px;top:26px;color:var(--yb-coral-deep)}
+.yb-hero-float small{display:block;font-weight:400;color:var(--yb-sub);font-size:11px}
+
+/* ============ 通用 section 头 ============ */
+.yb-sec{padding:46px 0}
+.yb-sec-head{margin-bottom:26px;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.yb-sec-title{font-size:26px;font-weight:800;letter-spacing:.6px;line-height:1.3}
+.yb-sec-title::before{
+  content:"";display:inline-block;width:6px;height:22px;border-radius:6px;margin-right:11px;
+  background:linear-gradient(180deg,var(--yb-coral),var(--yb-amber));vertical-align:-3px;
+}
+.yb-sec-sub{font-size:13.5px;color:var(--yb-sub)}
+.yb-eyebrow{font-size:12px;letter-spacing:3px;color:var(--yb-coral-deep);font-weight:700;text-transform:uppercase}
+
+/* ============ 关键词介绍/深度解析 ============ */
+.yb-about{background:#fff;border-radius:26px;border:1px solid var(--yb-line);padding:38px clamp(20px,4vw,48px);box-shadow:var(--yb-shadow)}
+.yb-about h2{font-size:25px;margin-bottom:8px}
+.yb-about .yb-eyebrow{display:block;margin-bottom:8px}
+.yb-about p{font-size:14.8px;color:#514a4f;margin-top:14px;text-align:justify}
+.yb-about p b{color:var(--yb-coral-deep)}
+.yb-about-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.yb-tag{
+  display:inline-block;background:#fff1eb;color:var(--yb-coral-deep);
+  border:1px solid #ffd9cb;border-radius:999px;padding:4px 13px;font-size:12.5px;font-weight:500;
+}
+.yb-tag.mint{background:#e7f6f2;color:#2f8577;border-color:#c7eae1}
+.yb-tag.amber{background:#fef5e0;color:#a97613;border-color:#f8e2b3}
+
+/* ============ 焦点视频 ============ */
+.yb-focus-grid{display:grid;grid-template-columns:1.42fr 1fr;gap:22px}
+.yb-focus-main{
+  border-radius:22px;overflow:hidden;background:#fff;border:1px solid var(--yb-line);
+  box-shadow:var(--yb-shadow);transition:.28s;display:flex;flex-direction:column;
+}
+.yb-focus-main:hover{transform:translateY(-4px)}
+.yb-cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#ffe3d6}
+.yb-cover svg{width:100%;height:100%;display:block;transition:.5s}
+.yb-focus-main:hover .yb-cover svg,.yb-vcard:hover .yb-cover svg{transform:scale(1.05)}
+.yb-cover-label{
+  position:absolute;left:12px;top:12px;background:rgba(47,42,46,.72);color:#fff;
+  border-radius:8px;padding:2px 10px;font-size:11.5px;letter-spacing:.5px;backdrop-filter:blur(4px);
+}
+.yb-cover-dur{
+  position:absolute;right:12px;bottom:12px;background:rgba(47,42,46,.72);color:#fff;
+  border-radius:6px;padding:1px 8px;font-size:11.5px;
+}
+.yb-play{
+  position:absolute;inset:0;margin:auto;width:58px;height:58px;border-radius:50%;
+  background:rgba(255,255,255,.92);display:grid;place-items:center;
+  box-shadow:0 10px 24px rgba(0,0,0,.18);transition:.25s;
+}
+.yb-play::after{content:"";border-style:solid;border-width:10px 0 10px 16px;border-color:transparent transparent transparent var(--yb-coral-deep);margin-left:4px}
+.yb-focus-main:hover .yb-play{transform:scale(1.1);background:#fff}
+.yb-focus-body{padding:18px 20px 20px}
+.yb-focus-body h3{font-size:19.5px;line-height:1.45;margin-bottom:8px}
+.yb-focus-body p{font-size:13.5px;color:var(--yb-sub)}
+.yb-meta{display:flex;align-items:center;gap:10px;margin-top:13px;flex-wrap:wrap}
+.yb-avatar{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:12.5px;font-weight:700;flex:0 0 auto}
+.yb-meta-name{font-size:12.8px;color:#554d52;font-weight:600}
+.yb-meta-dot{width:3px;height:3px;border-radius:50%;background:#d9ccd2}
+.yb-meta-num{font-size:12px;color:var(--yb-sub)}
+.yb-focus-side{display:grid;gap:14px}
+.yb-vcard{
+  background:#fff;border:1px solid var(--yb-line);border-radius:16px;overflow:hidden;
+  display:grid;grid-template-columns:132px 1fr;gap:0;transition:.25s;box-shadow:0 4px 14px rgba(226,82,63,.06);
+}
+.yb-vcard:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(226,82,63,.14)}
+.yb-vcard .yb-cover{border-radius:0;aspect-ratio:1/1;height:100%}
+.yb-vcard-body{padding:12px 14px;display:flex;flex-direction:column;justify-content:center}
+.yb-vcard-body h4{font-size:14.3px;line-height:1.45;margin-bottom:6px}
+.yb-vcard-body p{font-size:12px;color:var(--yb-sub);line-height:1.55;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.yb-vcard-tags{display:flex;gap:6px;margin-top:8px;flex-wrap:wrap}
+.yb-mini-tag{font-size:10.5px;background:#fff1eb;color:var(--yb-coral-deep);border-radius:5px;padding:1px 7px}
+
+/* ============ 视频流 ============ */
+.yb-vfilter{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:22px}
+.yb-chip{
+  border:1px solid #f0d9cc;background:#fff;border-radius:999px;padding:6px 16px;
+  font-size:13px;color:#5f565c;transition:.2s;
+}
+.yb-chip:hover{border-color:var(--yb-coral);color:var(--yb-coral-deep)}
+.yb-chip.is-active{background:var(--yb-coral);border-color:var(--yb-coral);color:#fff;font-weight:600;box-shadow:0 6px 14px rgba(249,115,98,.3)}
+.yb-vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.yb-vitem{
+  background:#fff;border:1px solid var(--yb-line);border-radius:var(--yb-radius);overflow:hidden;
+  display:flex;flex-direction:column;transition:.28s;box-shadow:0 5px 16px rgba(226,82,63,.06);
+}
+.yb-vitem:hover{transform:translateY(-5px);box-shadow:0 16px 32px rgba(226,82,63,.16)}
+.yb-vitem-body{padding:14px 16px 16px;display:flex;flex-direction:column;flex:1}
+.yb-vitem-body h3{font-size:15.5px;line-height:1.5;margin-bottom:7px}
+.yb-vitem-body p{font-size:12.5px;color:var(--yb-sub);flex:1;line-height:1.6}
+.yb-vitem-foot{display:flex;align-items:center;justify-content:space-between;margin-top:12px;gap:8px}
+.yb-ops{display:flex;gap:4px}
+.yb-op{
+  display:inline-flex;align-items:center;gap:4px;font-size:12px;color:#8b8189;
+  padding:4px 8px;border-radius:8px;transition:.2s;
+}
+.yb-op:hover{background:#fff3ec;color:var(--yb-coral-deep)}
+.yb-op.is-liked{color:var(--yb-coral-deep);font-weight:600}
+.yb-op.is-saved{color:var(--yb-amber);font-weight:600}
+
+/* ============ 专题 ============ */
+.yb-feature{background:linear-gradient(150deg,#fff7f1,#fef0e4);border-radius:28px;padding:44px 0}
+.yb-feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.yb-feat-card{
+  position:relative;border-radius:20px;overflow:hidden;color:#fff;min-height:238px;
+  display:flex;flex-direction:column;justify-content:flex-end;padding:22px;transition:.3s;
+  box-shadow:0 12px 26px rgba(226,82,63,.18);
+}
+.yb-feat-card:hover{transform:translateY(-6px)}
+.yb-feat-card .yb-feat-bg{position:absolute;inset:0;z-index:0}
+.yb-feat-card .yb-feat-bg svg{width:100%;height:100%}
+.yb-feat-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(30,20,18,.05),rgba(30,20,18,.72));z-index:1}
+.yb-feat-inner{position:relative;z-index:2}
+.yb-feat-state{display:inline-block;font-size:11px;background:rgba(255,255,255,.24);border:1px solid rgba(255,255,255,.4);padding:2px 10px;border-radius:999px;margin-bottom:9px;backdrop-filter:blur(4px)}
+.yb-feat-inner h3{font-size:19px;line-height:1.4}
+.yb-feat-inner p{font-size:12.8px;opacity:.9;margin-top:7px;line-height:1.6}
+
+/* ============ 创作者 ============ */
+.yb-makers{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.yb-maker{
+  background:#fff;border:1px solid var(--yb-line);border-radius:20px;padding:24px 18px;
+  text-align:center;transition:.28s;box-shadow:0 5px 16px rgba(226,82,63,.06);
+}
+.yb-maker:hover{transform:translateY(-6px);box-shadow:0 18px 32px rgba(226,82,63,.16)}
+.yb-maker-avatar{width:70px;height:70px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;color:#fff;font-size:24px;font-weight:800;box-shadow:0 8px 18px rgba(47,42,46,.16)}
+.yb-maker h3{font-size:16px}
+.yb-maker .yb-role{font-size:12px;color:var(--yb-coral-deep);font-weight:600;margin:3px 0 9px}
+.yb-maker p{font-size:12.5px;color:var(--yb-sub);min-height:60px;line-height:1.6}
+.yb-maker-nums{display:flex;justify-content:center;gap:16px;margin-top:10px;padding-top:12px;border-top:1px dashed #f1e2d7}
+.yb-maker-nums b{display:block;font-size:15px;color:var(--yb-ink)}
+.yb-maker-nums span{font-size:11px;color:var(--yb-sub)}
+.yb-maker-btn{margin-top:14px;width:100%;height:34px;border-radius:999px;border:1.5px solid #ffd3c6;color:var(--yb-coral-deep);font-size:12.5px;font-weight:600;transition:.2s}
+.yb-maker-btn:hover{background:var(--yb-coral);border-color:var(--yb-coral);color:#fff}
+
+/* ============ 故事随笔 ============ */
+.yb-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.yb-story{
+  background:#fff;border-radius:20px;border:1px solid var(--yb-line);padding:24px 22px;
+  border-left:5px solid var(--yb-amber);transition:.25s;
+}
+.yb-story:nth-child(2){border-left-color:var(--yb-coral)}
+.yb-story:nth-child(3){border-left-color:var(--yb-mint)}
+.yb-story:hover{transform:translateY(-4px);box-shadow:0 14px 26px rgba(226,82,63,.12)}
+.yb-story h3{font-size:16.5px;margin-bottom:9px}
+.yb-story p{font-size:13.2px;color:#5f565c;line-height:1.8}
+.yb-story-from{margin-top:13px;font-size:12px;color:var(--yb-sub)}
+
+/* ============ 评论 ============ */
+.yb-comments{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.yb-comment{
+  background:#fff;border:1px solid var(--yb-line);border-radius:16px;padding:18px;
+  transition:.25s;
+}
+.yb-comment:hover{box-shadow:0 12px 24px rgba(226,82,63,.10)}
+.yb-comment-top{display:flex;align-items:center;gap:10px;margin-bottom:9px}
+.yb-comment-top .yb-avatar{width:34px;height:34px;font-size:13px}
+.yb-comment-name{font-size:13.5px;font-weight:600}
+.yb-comment-time{font-size:11px;color:#a99fa6}
+.yb-comment p{font-size:13px;color:#5a5157;line-height:1.75}
+.yb-stars{color:var(--yb-amber);font-size:12px;letter-spacing:1px;margin-top:8px}
+
+/* ============ 数据榜单 ============ */
+.yb-rank{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.yb-rank-box{background:#fff;border:1px solid var(--yb-line);border-radius:20px;padding:22px}
+.yb-rank-box h3{font-size:16.5px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.yb-rank-box h3::before{content:"";width:5px;height:16px;border-radius:4px;background:var(--yb-coral)}
+.yb-rank-row{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px dashed #f4e8df;font-size:13.4px}
+.yb-rank-row:last-child{border-bottom:none}
+.yb-rank-no{width:22px;height:22px;border-radius:7px;display:grid;place-items:center;font-size:12px;font-weight:700;background:#f4f1ef;color:#8b8189;flex:0 0 auto}
+.yb-rank-row:nth-child(2) .yb-rank-no{background:#ffe1b8;color:#a97613}
+.yb-rank-row:nth-child(3) .yb-rank-no{background:#ffd9cb;color:var(--yb-coral-deep)}
+.yb-rank-row:nth-child(4) .yb-rank-no{background:#e7f6f2;color:#2f8577}
+.yb-rank-name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.yb-rank-val{color:var(--yb-sub);font-size:12px}
+
+/* ============ 更新日志 ============ */
+.yb-loglist{background:#fff;border:1px solid var(--yb-line);border-radius:20px;padding:12px 24px}
+.yb-log{display:flex;gap:16px;padding:16px 0;border-bottom:1px dashed #f4e8df;align-items:flex-start}
+.yb-log:last-child{border-bottom:none}
+.yb-log-date{flex:0 0 92px;font-size:12.5px;color:var(--yb-coral-deep);font-weight:700;padding-top:1px}
+.yb-log h4{font-size:14.5px;margin-bottom:4px}
+.yb-log p{font-size:12.8px;color:var(--yb-sub)}
+
+/* ============ FAQ ============ */
+.yb-faq{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.yb-faq details{
+  background:#fff;border:1px solid var(--yb-line);border-radius:14px;padding:0 18px;
+  transition:.25s;
+}
+.yb-faq details[open]{border-color:#ffc8b8;box-shadow:0 8px 20px rgba(226,82,63,.10)}
+.yb-faq summary{
+  list-style:none;cursor:pointer;font-size:14.2px;font-weight:600;padding:15px 24px 15px 0;
+  position:relative;
+}
+.yb-faq summary::-webkit-details-marker{display:none}
+.yb-faq summary::after{
+  content:"+";position:absolute;right:0;top:13px;font-size:19px;color:var(--yb-coral-deep);
+  font-weight:400;transition:.25s;
+}
+.yb-faq details[open] summary::after{transform:rotate(45deg)}
+.yb-faq details p{font-size:13px;color:var(--yb-sub);padding-bottom:15px;line-height:1.8}
+
+/* ============ 底部 CTA / 联系 ============ */
+.yb-cta{
+  background:linear-gradient(135deg,#2f2a2e,#4a3a3a 55%,#7a4038);
+  border-radius:28px;color:#fff;padding:46px clamp(22px,5vw,56px);
+  display:grid;grid-template-columns:1.3fr 1fr;gap:34px;align-items:center;
+  box-shadow:0 22px 46px rgba(47,42,46,.28);
+}
+.yb-cta h2{font-size:27px;line-height:1.35;margin-bottom:12px}
+.yb-cta h2 span{color:var(--yb-amber)}
+.yb-cta p{font-size:14px;color:#e6dbd6;line-height:1.85}
+.yb-cta-btns{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+.yb-btn-amber{background:linear-gradient(135deg,var(--yb-amber),#e79b19);color:#3a2a0c;box-shadow:0 10px 22px rgba(246,185,59,.3)}
+.yb-btn-amber:hover{transform:translateY(-2px)}
+.yb-btn-outline{border:1.5px solid rgba(255,255,255,.45);color:#fff}
+.yb-btn-outline:hover{background:rgba(255,255,255,.12)}
+.yb-contact-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:22px;font-size:13.3px;line-height:2.1;color:#f2e8e4;backdrop-filter:blur(6px)}
+.yb-contact-card b{color:#fff}
+.yb-contact-card .yb-kv{display:flex;justify-content:space-between;gap:10px;border-bottom:1px dashed rgba(255,255,255,.14);padding:5px 0}
+.yb-contact-card .yb-kv:last-child{border-bottom:none}
+
+/* ============ 页脚 ============ */
+.yb-footer{background:#241f23;color:#bbb0b5;margin-top:52px;padding:46px 0 0}
+.yb-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:34px}
+.yb-footer h4{color:#fff;font-size:14.5px;margin-bottom:14px;letter-spacing:.5px}
+.yb-footer p{font-size:12.8px;line-height:1.9}
+.yb-footer a{display:block;font-size:12.8px;padding:4px 0;transition:.2s}
+.yb-footer a:hover{color:var(--yb-amber)}
+.yb-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.yb-footer-brand .yb-logo-mark{box-shadow:none}
+.yb-footer-brand strong{color:#fff;font-size:16px}
+.yb-footer-bottom{border-top:1px solid rgba(255,255,255,.10);padding:20px 0;font-size:12.2px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#8e8489}
+
+/* ============ 弹窗 & Toast & 回到顶部 ============ */
+.yb-modal-mask{
+  position:fixed;inset:0;background:rgba(30,24,28,.55);z-index:300;
+  display:none;place-items:center;padding:20px;backdrop-filter:blur(3px);
+}
+.yb-modal-mask.is-on{display:grid}
+.yb-modal{
+  background:#fff;border-radius:22px;max-width:440px;width:100%;padding:28px;position:relative;
+  box-shadow:0 30px 60px rgba(0,0,0,.3);animation:ybPop .28s ease;
+}
+@keyframes ybPop{from{transform:translateY(16px) scale(.96);opacity:0}to{transform:none;opacity:1}}
+.yb-modal h3{font-size:19px;margin-bottom:6px}
+.yb-modal .yb-modal-sub{font-size:12.8px;color:var(--yb-sub);margin-bottom:16px}
+.yb-modal label{display:block;font-size:12.8px;font-weight:600;margin:10px 0 5px;color:#4b4348}
+.yb-modal input,.yb-modal textarea,.yb-modal select{
+  width:100%;border:1px solid var(--yb-line);border-radius:11px;padding:10px 13px;
+  font-size:13.5px;font-family:inherit;outline:none;background:#fffaf6;transition:.2s;
+}
+.yb-modal input:focus,.yb-modal textarea:focus,.yb-modal select:focus{border-color:var(--yb-coral);box-shadow:0 0 0 3px rgba(249,115,98,.14)}
+.yb-modal textarea{min-height:88px;resize:vertical}
+.yb-modal .yb-btn{width:100%;margin-top:18px}
+.yb-modal-close{
+  position:absolute;right:16px;top:14px;width:32px;height:32px;border-radius:50%;
+  background:#f6f1ee;color:#7a7076;font-size:16px;display:grid;place-items:center;transition:.2s;
+}
+.yb-modal-close:hover{background:#ffe3d9;color:var(--yb-coral-deep)}
+.yb-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+.yb-share-row button{
+  flex:1 1 90px;height:40px;border-radius:11px;background:#f9f4f0;font-size:13px;font-weight:600;
+  transition:.2s;color:#4b4348;
+}
+.yb-share-row button:hover{background:#ffe9e0;color:var(--yb-coral-deep)}
+
+.yb-toast{
+  position:fixed;left:50%;bottom:38px;transform:translate(-50%,20px);
+  background:rgba(47,42,46,.94);color:#fff;padding:11px 22px;border-radius:999px;
+  font-size:13.5px;opacity:0;pointer-events:none;transition:.3s;z-index:400;white-space:nowrap;
+}
+.yb-toast.is-on{opacity:1;transform:translate(-50%,0)}
+.yb-top{
+  position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;
+  background:linear-gradient(135deg,var(--yb-coral),var(--yb-coral-deep));color:#fff;
+  display:grid;place-items:center;font-size:18px;box-shadow:0 10px 22px rgba(226,82,63,.38);
+  opacity:0;pointer-events:none;transition:.3s;z-index:150;
+}
+.yb-top.is-on{opacity:1;pointer-events:auto}
+.yb-top:hover{transform:translateY(-3px)}
+
+/* ============ 响应式 ============ */
+@media (max-width:1024px){
+  .yb-nav{display:none}
+  .yb-burger{display:grid}
+  .yb-search input{width:140px}
+  .yb-search input:focus{width:170px}
+  .yb-hero-grid{grid-template-columns:1fr;gap:34px}
+  .yb-focus-grid{grid-template-columns:1fr}
+  .yb-vgrid{grid-template-columns:repeat(2,1fr)}
+  .yb-feat-grid{grid-template-columns:1fr 1fr}
+  .yb-makers{grid-template-columns:repeat(2,1fr)}
+  .yb-story-grid,.yb-comments{grid-template-columns:1fr 1fr}
+  .yb-cta{grid-template-columns:1fr}
+  .yb-footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:680px){
+  .yb-head-actions .yb-btn-main{display:none}
+  .yb-search{display:none}
+  .yb-vgrid,.yb-feat-grid,.yb-makers,.yb-story-grid,.yb-comments,.yb-faq,.yb-rank,.yb-footer-grid{grid-template-columns:1fr}
+  .yb-hero{padding-top:32px}
+  .yb-sec{padding:34px 0}
+  .yb-about{padding:26px 20px}
+  .yb-focus-side{grid-template-columns:1fr}
+  .yb-vcard{grid-template-columns:112px 1fr}
+  .yb-cta{padding:32px 22px}
+  .yb-footer-bottom{flex-direction:column;gap:6px}
+  .yb-top{right:14px;bottom:16px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="yb-topfixed">
+  <div class="yb-notice" role="region" aria-label="站内公告">
+    <div class="yb-wrap">
+      <span class="yb-notice-badge">官方发布</span>
+      <div class="yb-notice-track">
+        <span><b>悠宝三岁全集</b> 第 3 季「日常影像集」11 月 18 日新增 6 支原创短片</span>
+        <span>「小小探索家」亲子共创企划 <b>报名进行中</b>，限 200 组家庭</span>
+        <span>创作者扶持计划第 6 期名单公布，新增 12 位签约作者</span>
+        <span>品牌官网 2026 年度口碑调研开启，欢迎反馈</span>
+        <span><b>悠宝三岁全集</b> 第 3 季「日常影像集」11 月 18 日新增 6 支原创短片</span>
+        <span>「小小探索家」亲子共创企划 <b>报名进行中</b>，限 200 组家庭</span>
+        <span>创作者扶持计划第 6 期名单公布，新增 12 位签约作者</span>
+        <span>品牌官网 2026 年度口碑调研开启，欢迎反馈</span>
+      </div>
+    </div>
+  </div>
+  <header class="yb-head">
+    <div class="yb-wrap">
+      <a class="yb-logo" href="#yb-home" aria-label="悠宝三岁全集官方网站首页">
+        <span class="yb-logo-mark">悠</span>
+        <span class="yb-logo-txt"><strong>悠宝三岁全集</strong><em>YOUBAO STUDIO</em></span>
+      </a>
+      <nav class="yb-nav" aria-label="主导航">
+        <a href="#yb-home">首页</a>
+        <a href="#yb-about">品牌解析</a>
+        <a href="#yb-focus">焦点内容</a>
+        <a href="#yb-feature">专题企划</a>
+        <a href="#yb-makers">创作者</a>
+        <a href="#yb-rank">榜单</a>
+        <a href="#yb-faq">帮助</a>
+        <a href="#yb-contact">联系</a>
+      </nav>
+      <div class="yb-head-actions">
+        <form class="yb-search" id="ybSearchForm" role="search" onsubmit="return false;">
+          <input type="search" id="ybSearchInput" placeholder="搜索影像 / 作者 / 专题" aria-label="站内搜索">
+          <button type="submit" aria-label="搜索">⌕</button>
+          <div class="yb-search-tip" id="ybSearchTip"></div>
+        </form>
+        <button class="yb-btn yb-btn-main" data-modal="ybModalSubmit">我要投稿</button>
+        <button class="yb-burger" id="ybBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+      </div>
+    </div>
+    <nav class="yb-mobile-nav" id="ybMobileNav" aria-label="移动端导航">
+      <a href="#yb-home">首页</a>
+      <a href="#yb-about">品牌解析</a>
+      <a href="#yb-focus">焦点内容</a>
+      <a href="#yb-videos">视频流</a>
+      <a href="#yb-feature">专题企划</a>
+      <a href="#yb-makers">创作者</a>
+      <a href="#yb-story">成长随笔</a>
+      <a href="#yb-rank">榜单</a>
+      <a href="#yb-update">企业动态</a>
+      <a href="#yb-faq">帮助中心</a>
+      <a href="#yb-contact">联系我们</a>
+    </nav>
+  </header>
+</div>
+
+<main id="yb-home">
+
+  <!-- ============ 首屏 ============ -->
+  <section class="yb-hero">
+    <div class="yb-wrap yb-hero-grid">
+      <div>
+        <span class="yb-hero-badge"><i></i> 亲子成长影像品牌 · 官网正式发布</span>
+        <h1 class="yb-h1">悠宝<span>三岁全集</span></h1>
+        <p class="yb-hero-slogan">把 <em>三岁</em> 这一年，拍成一部 <em>完整的成长影像</em></p>
+        <p class="yb-hero-desc">
+          悠宝三岁全集官方网站，是专注三岁儿童成长记录与家庭影像的原创视频品牌。我们以真实日常为素材，用专业镜头语言整理出一套可持续更新的亲子成长影像集，让每一段看似平常的瞬间，都拥有被认真收藏的价值。
+        </p>
+        <div class="yb-hero-btns">
+          <a class="yb-btn yb-btn-main" href="#yb-focus">浏览焦点影像</a>
+          <a class="yb-btn yb-btn-ghost" href="#yb-about">了解品牌理念</a>
+          <button class="yb-btn yb-btn-ghost" data-modal="ybModalShare">分享给家人</button>
+        </div>
+        <div class="yb-stats">
+          <div class="yb-stat"><b>1,286</b><span>原创影像条目</span></div>
+          <div class="yb-stat"><b>38.6万</b><span>家庭用户关注</span></div>
+          <div class="yb-stat"><b>4.9</b><span>社区口碑评分</span></div>
+        </div>
+      </div>
+      <div class="yb-hero-visual">
+        <div class="yb-hero-cover">
+          <svg viewBox="0 0 640 440" role="img" aria-label="悠宝三岁全集品牌主视觉：暖阳下的三岁孩童与积木">
+            <defs>
+              <linearGradient id="ybSky" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ffe6cf"/><stop offset=".55" stop-color="#ffd2bb"/><stop offset="1" stop-color="#f7b7a3"/>
+              </linearGradient>
+              <linearGradient id="ybFloor" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fbe3c9"/><stop offset="1" stop-color="#f0c8a6"/>
+              </linearGradient>
+            </defs>
+            <rect width="640" height="440" fill="url(#ybSky)"/>
+            <circle cx="524" cy="82" r="52" fill="#fff3c4" opacity=".92"/>
+            <circle cx="524" cy="82" r="78" fill="#fff3c4" opacity=".22"/>
+            <path d="M0 300 Q160 262 320 292 T640 278 L640 440 L0 440 Z" fill="url(#ybFloor)"/>
+            <rect x="86" y="176" width="112" height="112" rx="16" fill="#f97362" transform="rotate(-9 142 232)"/>
+            <rect x="70" y="262" width="90" height="90" rx="14" fill="#f6b93b" transform="rotate(7 115 307)"/>
+            <circle cx="404" cy="236" r="54" fill="#fff4ea"/>
+            <path d="M350 316c0-32 24-56 54-56s54 24 54 56z" fill="#4fb6a4"/>
+            <circle cx="384" cy="228" r="5" fill="#2f2a2e"/>
+            <circle cx="424" cy="228" r="5" fill="#2f2a2e"/>
+            <path d="M392 250q12 10 24 0" stroke="#e2523f" stroke-width="5" fill="none" stroke-linecap="round"/>
+            <rect x="452" y="286" width="58" height="58" rx="10" fill="#8d7bd8" opacity=".85"/>
+            <path d="M0 372h640" stroke="#fff" stroke-opacity=".28" stroke-width="2"/>
+            <circle cx="278" cy="86" r="10" fill="#fff" opacity=".6"/>
+            <circle cx="316" cy="126" r="6" fill="#fff" opacity=".5"/>
+          </svg>
+          <span class="yb-play" aria-hidden="true"></span>
+          <span class="yb-cover-label">品牌主视觉 · 第 3 季</span>
+          <span class="yb-cover-dur">03:42</span>
+        </div>
+        <div class="yb-hero-float f1">📷 高清 4K 修复<small>老素材统一画质</small></div>
+        <div class="yb-hero-float f2">👨‍👩‍👧 2,400+ 家庭<small>共同参与记录</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 品牌解析 ============ -->
+  <section class="yb-sec" id="yb-about">
+    <div class="yb-wrap">
+      <div class="yb-about">
+        <span class="yb-eyebrow">Brand Analysis · 品牌解析</span>
+        <h2>关于「悠宝三岁全集」：一套被认真对待的成长影像档案</h2>
+        <p>
+          悠宝三岁全集是一个以「三岁」为核心节点的亲子成长影像品牌。三岁是孩子语言、动作、情绪与社会性快速发展的阶段，也是家庭影像最容易散落、最难成册的时期。我们把散落在手机、相册、硬盘里的碎片素材，按照时间、场景与主题重新梳理，形成可检索、可回看、可长期保存的原创影像档案。作为亲子成长领域的垂直领域品牌，官方网站持续对外发布精品内容，也向所有家庭开放投稿与共创通道。
+        </p>
+        <p>
+          品牌的内容结构分为三条主线：其一是<b>日常影像集</b>，记录吃饭、睡觉、玩耍、出门这些最普通却最不可复制的片段；其二是<b>成长故事</b>，围绕第一次开口、第一次独立、第一次交朋友等关键节点展开叙事；其三是<b>创作者共创</b>，邀请父母、摄影师、幼教从业者以不同视角参与，让影像不止于记录，更成为可被讨论与分享的内容生态。三条主线共同构成悠宝三岁全集的品牌骨架，也让「全集」不只是一个数量概念，而是一种长期运营的承诺。
+        </p>
+        <p>
+          在制作层面，我们坚持正版素材、原创剪辑与统一的高清标准，所有对外发布内容均经过画质、声音与隐私三重审核。品牌与多位儿童摄影、家庭纪实方向的创作者保持长期合作，形成稳定而多元的内容生态。我们相信，<b>品质</b>不是昂贵的设备堆叠，而是对每一个镜头的耐心；<b>口碑</b>不是一句口号，而是无数家庭愿意把珍贵片段托付给我们的结果。
+        </p>
+        <p>
+          三岁这一年很快就会过去，但影像可以让它慢一点。悠宝三岁全集的使命，是让每个普通家庭的成长片段都被温柔地保存下来。我们不做夸张的戏剧化处理，也不追逐流量式的标题，只希望当孩子长大后打开这套影像时，能看见真实的自己，也能看见当年认真记录他的那些人。这正是品牌持续运营的意义，也是我们愿意长期深耕的方向。
+        </p>
+        <div class="yb-about-tags">
+          <span class="yb-tag">官方网站</span>
+          <span class="yb-tag mint">原创正版</span>
+          <span class="yb-tag amber">高清影像</span>
+          <span class="yb-tag">亲子成长</span>
+          <span class="yb-tag mint">内容生态</span>
+          <span class="yb-tag amber">持续运营</span>
+          <span class="yb-tag">用户至上</span>
+          <span class="yb-tag mint">值得信赖</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 焦点内容 ============ -->
+  <section class="yb-sec" id="yb-focus">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">Focus · 焦点内容</span>
+          <h2 class="yb-sec-title">本周焦点影像</h2>
+          <p class="yb-sec-sub">编辑部从第 3 季素材中挑选的 6 支短片，适合与家人一起慢慢看</p>
+        </div>
+        <button class="yb-btn yb-btn-ghost" data-modal="ybModalSubmit">投稿你的日常</button>
+      </div>
+
+      <div class="yb-focus-grid">
+        <article class="yb-focus-main">
+          <div class="yb-cover">
+            <svg viewBox="0 0 640 360" role="img" aria-label="焦点影像封面：三岁孩子第一次自己穿鞋的清晨">
+              <defs>
+                <linearGradient id="ybF1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#ffd9b0"/><stop offset="1" stop-color="#f7a48c"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#ybF1)"/>
+              <rect x="0" y="252" width="640" height="108" fill="#e9a97f" opacity=".7"/>
+              <ellipse cx="320" cy="300" rx="150" ry="26" fill="#c97f5c" opacity=".35"/>
+              <circle cx="320" cy="150" r="62" fill="#fff2e6"/>
+              <path d="M258 300c0-46 28-82 62-82s62 36 62 82z" fill="#4fb6a4"/>
+              <path d="M288 268l44 0" stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".7"/>
+              <rect x="404" y="170" width="86" height="86" rx="12" fill="#fff6e0" opacity=".85"/>
+              <path d="M418 206h58M418 226h58M418 246h36" stroke="#e0a35a" stroke-width="6" stroke-linecap="round"/>
+              <circle cx="132" cy="96" r="34" fill="#fff" opacity=".32"/>
+              <circle cx="534" cy="70" r="22" fill="#fff" opacity=".45"/>
+            </svg>
+            <span class="yb-play" aria-hidden="true"></span>
+            <span class="yb-cover-label">焦点首推</span>
+            <span class="yb-cover-dur">08:16</span>
+          </div>
+          <div class="yb-focus-body">
+            <h3>他花了两分半，把鞋带绕成一个歪歪的蝴蝶结</h3>
+            <p>三岁零四个月的早晨，第一次坚持自己穿鞋。镜头没有催促，也没有剪辑掉失败的两次尝试——这是「日常影像集」里我们最想保留的部分：笨拙、缓慢，但完全属于他自己。</p>
+            <div class="yb-meta">
+              <span class="yb-avatar" style="background:#f97362">林</span>
+              <span class="yb-meta-name">林小满</span>
+              <span class="yb-meta-dot"></span>
+              <span class="yb-meta-num">86.2 万次播放</span>
+              <span class="yb-meta-dot"></span>
+              <span class="yb-meta-num">11/18 更新</span>
+            </div>
+          </div>
+        </article>
+
+        <div class="yb-focus-side">
+          <article class="yb-vcard">
+            <div class="yb-cover">
+              <svg viewBox="0 0 240 240" role="img" aria-label="焦点影像封面：厨房里的小帮手与面粉">
+                <rect width="240" height="240" fill="#fbe0c4"/>
+                <circle cx="120" cy="88" r="36" fill="#fff4e8"/>
+                <path d="M78 200c0-30 19-54 42-54s42 24 42 54z" fill="#f6b93b"/>
+                <circle cx="120" cy="180" r="30" fill="#fff8ec" opacity=".7"/>
+                <circle cx="66" cy="60" r="9" fill="#fff" opacity=".6"/>
+                <circle cx="182" cy="52" r="6" fill="#fff" opacity=".55"/>
+              </svg>
+              <span class="yb-cover-dur">05:02</span>
+            </div>
+            <div class="yb-vcard-body">
+              <h4>和三岁小孩一起做面团的 30 分钟</h4>
+              <p>面粉、水、一点点盐，和一地狼藉。亲子烹饪记录的完整流程与安抚小技巧。</p>
+              <div class="yb-vcard-tags"><span class="yb-mini-tag">美食烹饪</span><span class="yb-mini-tag">日常记录</span></div>
+            </div>
+          </article>
+          <article class="yb-vcard">
+            <div class="yb-cover">
+              <svg viewBox="0 0 240 240" role="img" aria-label="焦点影像封面：秋天公园里的落叶与小小身影">
+                <rect width="240" height="240" fill="#d9e8d2"/>
+                <path d="M0 180q60-40 120-16t120-24v100H0z" fill="#a8c79a"/>
+                <circle cx="120" cy="96" r="30" fill="#fff7ec"/>
+                <path d="M84 200c0-28 16-48 36-48s36 20 36 48z" fill="#e2523f"/>
+                <path d="M40 60l14 20M60 48l8 24" stroke="#7fa471" stroke-width="5" stroke-linecap="round"/>
+                <circle cx="196" cy="76" r="12" fill="#f6b93b"/>
+              </svg>
+              <span class="yb-cover-dur">06:48</span>
+            </div>
+            <div class="yb-vcard-body">
+              <h4>捡了 17 片叶子，他说要做成一本书</h4>
+              <p>城市探索与自然观察结合的一支短片，附送亲子压花制作的小教程。</p>
+              <div class="yb-vcard-tags"><span class="yb-mini-tag">户外活动</span><span class="yb-mini-tag">手作DIY</span></div>
+            </div>
+          </article>
+          <article class="yb-vcard">
+            <div class="yb-cover">
+              <svg viewBox="0 0 240 240" role="img" aria-label="焦点影像封面：夜晚床边讲故事的温暖灯光">
+                <rect width="240" height="240" fill="#3c3350"/>
+                <circle cx="176" cy="60" r="26" fill="#f6e2a8" opacity=".9"/>
+                <rect x="56" y="130" width="128" height="70" rx="12" fill="#6d5b8c"/>
+                <rect x="72" y="104" width="44" height="28" rx="8" fill="#f6e2a8"/>
+                <circle cx="94" cy="150" r="12" fill="#fff3d6"/>
+                <rect x="136" y="140" width="34" height="50" rx="8" fill="#a08ac9"/>
+                <circle cx="44" cy="96" r="5" fill="#fff" opacity=".7"/>
+                <circle cx="210" cy="150" r="4" fill="#fff" opacity=".6"/>
+              </svg>
+              <span class="yb-cover-dur">04:24</span>
+            </div>
+            <div class="yb-vcard-body">
+              <h4>关灯后还要听的第三个故事</h4>
+              <p>睡前仪式感记录，附带 12 本三岁适龄绘本的清单与讲述节奏建议。</p>
+              <div class="yb-vcard-tags"><span class="yb-mini-tag">情感故事</span><span class="yb-mini-tag">治愈影像</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 视频流 ============ -->
+  <section class="yb-sec" id="yb-videos">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">Channel · 热门视频流</span>
+          <h2 class="yb-sec-title">正在被观看的成长片段</h2>
+          <p class="yb-sec-sub">按主题筛选，找到与你家节奏相近的那一支</p>
+        </div>
+      </div>
+
+      <div class="yb-vfilter" id="ybFilter">
+        <button class="yb-chip is-active" data-cat="all">全部</button>
+        <button class="yb-chip" data-cat="daily">日常记录</button>
+        <button class="yb-chip" data-cat="guide">教程干货</button>
+        <button class="yb-chip" data-cat="story">成长故事</button>
+        <button class="yb-chip" data-cat="city">城市探索</button>
+        <button class="yb-chip" data-cat="craft">手作DIY</button>
+      </div>
+
+      <div class="yb-vgrid" id="ybVideoGrid">
+
+        <article class="yb-vitem" data-cat="daily">
+          <div class="yb-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：清晨阳台上的小小浇花人">
+              <rect width="320" height="180" fill="#ffe9d2"/>
+              <rect y="126" width="320" height="54" fill="#f3c9a4"/>
+              <circle cx="252" cy="42" r="24" fill="#fff2c8"/>
+              <circle cx="128" cy="80" r="26" fill="#fff7ec"/>
+              <path d="M98 138c0-24 14-42 30-42s30 18 30 42z" fill="#4fb6a4"/>
+              <path d="M196 132v-34l30 12z" fill="#8fbf7a"/>
+              <rect x="188" y="132" width="22" height="18" rx="4" fill="#c98a5c"/>
+            </svg>
+            <span class="yb-cover-label">日常记录</span>
+            <span class="yb-cover-dur">04:12</span>
+          </div>
+          <div class="yb-vitem-body">
+            <h3>每天早晨 7 点，他坚持自己给绿萝浇水</h3>
+            <p>从洒到桌上到能精准浇进盆里，我们拍了 21 天。一个关于耐心与自主的小实验。</p>
+            <div class="yb-vitem-foot">
+              <span class="yb-meta-name">@ 阿柚妈妈</span>
+              <div class="yb-ops">
+                <button class="yb-op yb-like" aria-label="点赞">♡ <span>1,204</span></button>
+                <button class="yb-op yb-save" aria-label="收藏">☆</button>
+                <button class="yb-op yb-share" aria-label="分享">↗</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="yb-vitem" data-cat="guide">
+          <div class="yb-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：三岁语言启蒙的亲子对话场景">
+              <rect width="320" height="180" fill="#e3f2ee"/>
+              <circle cx="94" cy="82" r="30" fill="#fff8ec"/>
+              <circle cx="212" cy="90" r="24" fill="#ffe4cc"/>
+              <path d="M56 160c0-26 16-46 38-46s38 20 38 46z" fill="#4fb6a4"/>
+              <path d="M182 160c0-22 13-38 30-38s30 16 30 38z" fill="#f6b93b"/>
+              <rect x="132" y="28" width="58" height="34" rx="10" fill="#fff" opacity=".85"/>
+              <path d="M148 46h26M148 56h16" stroke="#8fbf7a" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <span class="yb-cover-label">教程干货</span>
+            <span class="yb-cover-dur">09:30</span>
+          </div>
+          <div class="yb-vitem-body">
+            <h3>三岁语言爆发期：每天 10 分钟对话练习法</h3>
+            <p>不背单词、不刷卡片，用「描述—提问—等待」三步，让对话自然变长。</p>
+            <div class="yb-vitem-foot">
+              <span class="yb-meta-name">@ 说话实验室</span>
+              <div class="yb-ops">
+                <button class="yb-op yb-like" aria-label="点赞">♡ <span>3,482</span></button>
+                <button class="yb-op yb-save" aria-label="收藏">☆</button>
+                <button class="yb-op yb-share" aria-label="分享">↗</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="yb-vitem" data-cat="story">
+          <div class="yb-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：第一天上幼儿园门口的告别">
+              <rect width="320" height="180" fill="#d8e3f2"/>
+              <rect y="120" width="320" height="60" fill="#b8c9e0"/>
+              <rect x="40" y="46" width="70" height="74" rx="6" fill="#eef3fb"/>
+              <rect x="52" y="58" width="20" height="20" rx="3" fill="#a9c4e4"/>
+              <rect x="80" y="58" width="20" height="20" rx="3" fill="#a9c4e4"/>
+              <circle cx="228" cy="86" r="24" fill="#fff6ea"/>
+              <path d="M200 170c0-28 13-48 28-48s28 20 28 48z" fill="#e2523f"/>
+              <path d="M256 112l24-16" stroke="#f6b93b" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <span class="yb-cover-label">成长故事</span>
+            <span class="yb-cover-dur">06:05</span>
+          </div>
+          <div class="yb-vitem-body">
+            <h3>送到门口第 5 天，他第一次没有回头</h3>
+            <p>入园适应期的真实记录。我们保留了哭的那几天，也保留了后来挥手的那个早上。</p>
+            <div class="yb-vitem-foot">
+              <span class="yb-meta-name">@ 七月与北北</span>
+              <div class="yb-ops">
+                <button class="yb-op yb-like" aria-label="点赞">♡ <span>5,916</span></button>
+                <button class="yb-op yb-save" aria-label="收藏">☆</button>
+                <button class="yb-op yb-share" aria-label="分享">↗</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="yb-vitem" data-cat="city">
+          <div class="yb-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：城市地铁里好奇张望的三岁乘客">
+              <rect width="320" height="180" fill="#e8e0f5"/>
+              <rect y="34" width="320" height="12" fill="#c9b8e6"/>
+              <rect x="34" y="52" width="120" height="76" rx="8" fill="#f6f0ff"/>
+              <rect x="166" y="52" width="120" height="76" rx="8" fill="#f6f0ff"/>
+              <circle cx="200" cy="90" r="20" fill="#fff2e0"/>
+              <circle cx="200" cy="90" r="8" fill="#3c3350" opacity=".7"/>
+              <path d="M96 180v-40" stroke="#a892cf" stroke-width="6"/>
+              <path d="M256 180v-40" stroke="#a892cf" stroke-width="6"/>
+            </svg>
+            <span class="yb-cover-label">城市探索</span>
+            <span class="yb-cover-dur">07:22</span>
+          </div>
+          <div class="yb-vitem-body">
+            <h3>带三岁小孩坐地铁，他把每站都背了下来</h3>
+            <p>一条线路，八个周末。城市探索系列第一集，附带亲子出行节奏安排小攻略。</p>
+            <div class="yb-vitem-foot">
+              <span class="yb-meta-name">@ 城南漫游组</span>
+              <div class="yb-ops">
+                <button class="yb-op yb-like" aria-label="点赞">♡ <span>2,073</span></button>
+                <button class="yb-op yb-save" aria-label="收藏">☆</button>
+                <button class="yb-op yb-share" aria-label="分享">↗</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="yb-vitem" data-cat="craft">
+          <div class="yb-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：纸箱变成小房子的手作现场">
+              <rect width="320" height="180" fill="#fceccd"/>
+              <rect x="70" y="62" width="180" height="100" rx="8" fill="#e0b483"/>
+              <path d="M62 66l98-42 98 42z" fill="#c98a5c"/>
+              <rect x="134" y="104" width="52" height="58" rx="4" fill="#f6e2c0"/>
+              <circle cx="176" cy="132" r="4" fill="#a97613"/>
+              <circle cx="98" cy="94" r="12" fill="#fff5dc"/>
+              <circle cx="222" cy="94" r="12" fill="#fff5dc"/>
+              <path d="M40 160h240" stroke="#c98a5c" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="yb-cover-label">手作DIY</span>
+            <span class="yb-cover-dur">11:40</span>
+          </div>
+          <div class="yb-vitem-body">
+            <h3>一个纸箱，一下午，他拥有了自己的小房子</h3>
+            <p>从裁窗到涂墙全程参与，安全工具清单与「别替他做完」的五个提醒。</p>
+            <div class="yb-vitem-foot">
+              <span class="yb-meta-name">@ 咔嗒手作间</span>
+              <div class="yb-ops">
+                <button class="yb-op yb-like" aria-label="点赞">♡ <span>4,271</span></button>
+                <button class="yb-op yb-save" aria-label="收藏">☆</button>
+                <button class="yb-op yb-share" aria-label="分享">↗</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="yb-vitem" data-cat="daily">
+          <div class="yb-cover">
+            <svg viewBox="0 0 320 180" role="img" aria-label="视频封面：午后地板上安静搭积木的孩子">
+              <rect width="320" height="180" fill="#fff1e0"/>
+              <rect y="122" width="320" height="58" fill="#f0d2b4"/>
+              <rect x="86" y="90" width="34" height="34" rx="5" fill="#f97362"/>
+              <rect x="124" y="62" width="34" height="34" rx="5" fill="#f6b93b"/>
+              <rect x="162" y="90" width="34" height="34" rx="5" fill="#4fb6a4"/>
+              <circle cx="236" cy="72" r="22" fill="#fff8ec"/>
+              <path d="M206 150c0-24 14-42 30-42s30 18 30 42z" fill="#c98a5c"/>
+              <path d="M48 56h26M48 74h18" stroke="#e0b483" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <span class="yb-cover-label">日常记录</span>
+            <span class="yb-cover-dur">03:36</span>
+          </div>
+          <div class="yb-vitem-body">
+            <h3>他搭了 40 分钟，只为让塔不倒</h3>
+            <p>没有旁白、没有音乐，只有呼吸和积木轻碰的声音。一支安静的观察式短片。</p>
+            <div class="yb-vitem-foot">
+              <span class="yb-meta-name">@ 慢镜头家庭</span>
+              <div class="yb-ops">
+                <button class="yb-op yb-like" aria-label="点赞">♡ <span>996</span></button>
+                <button class="yb-op yb-save" aria-label="收藏">☆</button>
+                <button class="yb-op yb-share" aria-label="分享">↗</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 专题企划 ============ -->
+  <section class="yb-feature" id="yb-feature">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">Project · 专题企划</span>
+          <h2 class="yb-sec-title">正在进行的三个共创企划</h2>
+          <p class="yb-sec-sub">每个企划都开放报名，欢迎家庭与创作者一起完成</p>
+        </div>
+        <button class="yb-btn yb-btn-main" data-modal="ybModalSubmit">报名参与</button>
+      </div>
+
+      <div class="yb-feat-grid">
+        <article class="yb-feat-card">
+          <div class="yb-feat-bg">
+            <svg viewBox="0 0 400 300" role="img" aria-label="专题封面：小小探索家城市地图">
+              <rect width="400" height="300" fill="#4fb6a4"/>
+              <circle cx="320" cy="60" r="46" fill="#7fd0c1" opacity=".7"/>
+              <path d="M0 220q80-40 160-10t240-20v110H0z" fill="#2f8577"/>
+              <rect x="60" y="70" width="80" height="60" rx="8" fill="#e7f6f2" opacity=".9"/>
+              <circle cx="220" cy="110" r="24" fill="#f6b93b"/>
+              <path d="M240 200l40-26" stroke="#e7f6f2" stroke-width="7" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="yb-feat-inner">
+            <span class="yb-feat-state">更新中 · 已上线 12 集</span>
+            <h3>小小探索家：用一年走完这座城</h3>
+            <p>以三岁儿童的视角，记录公园、菜市场、旧书店与地铁。第 4 批家庭报名开放中。</p>
+          </div>
+        </article>
+
+        <article class="yb-feat-card">
+          <div class="yb-feat-bg">
+            <svg viewBox="0 0 400 300" role="img" aria-label="专题封面：亲子共读的暖色书页">
+              <rect width="400" height="300" fill="#e2523f"/>
+              <circle cx="90" cy="70" r="40" fill="#f97362" opacity=".8"/>
+              <path d="M80 200q120-70 240 0" stroke="#f6b93b" stroke-width="10" fill="none" stroke-linecap="round"/>
+              <rect x="140" y="90" width="120" height="88" rx="8" fill="#fff2e6" opacity=".95"/>
+              <path d="M160 116h80M160 134h80M160 152h50" stroke="#e0a35a" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="yb-feat-inner">
+            <span class="yb-feat-state">招募中 · 剩 38 组名额</span>
+            <h3>365 个睡前故事：亲子共读影像计划</h3>
+            <p>每天读一本，拍一分钟。让声音与画面一起，成为孩子三岁这一年的背景音乐。</p>
+          </div>
+        </article>
+
+        <article class="yb-feat-card">
+          <div class="yb-feat-bg">
+            <svg viewBox="0 0 400 300" role="img" aria-label="专题封面：旧素材修复的胶片与光">
+              <rect width="400" height="300" fill="#3c3350"/>
+              <circle cx="200" cy="140" r="86" fill="#6d5b8c" opacity=".6"/>
+              <circle cx="200" cy="140" r="52" fill="#f6e2a8" opacity=".85"/>
+              <rect x="34" y="34" width="48" height="48" rx="8" fill="#a08ac9"/>
+              <rect x="318" y="34" width="48" height="48" rx="8" fill="#a08ac9"/>
+              <rect x="34" y="218" width="48" height="48" rx="8" fill="#a08ac9"/>
+              <rect x="318" y="218" width="48" height="48" rx="8" fill="#a08ac9"/>
+            </svg>
+          </div>
+          <div class="yb-feat-inner">
+            <span class="yb-feat-state">成品发布 · 共 8 集</span>
+            <h3>找回模糊的那一年：家庭旧影像修复</h3>
+            <p>把手机里模糊的早期视频整理修复，重新剪成可长期保存的高清成长合集。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 创作者矩阵 ============ -->
+  <section class="yb-sec" id="yb-makers">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">Creators · 创作者矩阵</span>
+          <h2 class="yb-sec-title">记录者，也是同行的人</h2>
+          <p class="yb-sec-sub">四位长期合作的原创作者，从不同角度讲述三岁这一年</p>
+        </div>
+      </div>
+
+      <div class="yb-makers">
+        <article class="yb-maker">
+          <div class="yb-maker-avatar" style="background:linear-gradient(140deg,#f97362,#f6b93b)">林</div>
+          <h3>林小满</h3>
+          <p class="yb-role">家庭纪实导演</p>
+          <p>擅长用长镜头记录孩子的慢动作，主张「不打断、不摆拍」。品牌首批签约作者。</p>
+          <div class="yb-maker-nums">
+            <div><b>126</b><span>作品</span></div>
+            <div><b>18.2万</b><span>关注</span></div>
+          </div>
+          <button class="yb-maker-btn" data-author="林小满">查看作者档案</button>
+        </article>
+
+        <article class="yb-maker">
+          <div class="yb-maker-avatar" style="background:linear-gradient(140deg,#4fb6a4,#7ed0c1)">说</div>
+          <h3>说话实验室</h3>
+          <p class="yb-role">语言启蒙内容组</p>
+          <p>由三位幼教从业者组成，专注三岁语言发展与亲子对话方法，坚持每支视频都有可操作步骤。</p>
+          <div class="yb-maker-nums">
+            <div><b>88</b><span>作品</span></div>
+            <div><b>9.6万</b><span>关注</span></div>
+          </div>
+          <button class="yb-maker-btn" data-author="说话实验室">查看作者档案</button>
+        </article>
+
+        <article class="yb-maker">
+          <div class="yb-maker-avatar" style="background:linear-gradient(140deg,#8d7bd8,#a08ac9)">七</div>
+          <h3>七月与北北</h3>
+          <p class="yb-role">成长故事记录者</p>
+          <p>一位妈妈和一台旧相机，记录入园、搬家、生病与和好。文字与影像并重，真实不修饰。</p>
+          <div class="yb-maker-nums">
+            <div><b>64</b><span>作品</span></div>
+            <div><b>12.4万</b><span>关注</span></div>
+          </div>
+          <button class="yb-maker-btn" data-author="七月与北北">查看作者档案</button>
+        </article>
+
+        <article class="yb-maker">
+          <div class="yb-maker-avatar" style="background:linear-gradient(140deg,#e2523f,#c98a5c)">咔</div>
+          <h3>咔嗒手作间</h3>
+          <p class="yb-role">亲子手作创作者</p>
+          <p>把家变成工作台，用纸箱、木片和旧布做玩具。所有教程都经过三岁小孩实际测试。</p>
+          <div class="yb-maker-nums">
+            <div><b>73</b><span>作品</span></div>
+            <div><b>7.8万</b><span>关注</span></div>
+          </div>
+          <button class="yb-maker-btn" data-author="咔嗒手作间">查看作者档案</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 成长随笔 ============ -->
+  <section class="yb-sec" id="yb-story">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">Essay · 成长随笔</span>
+          <h2 class="yb-sec-title">影像之外的几句话</h2>
+          <p class="yb-sec-sub">来自创作者与家庭的文字记录，与视频互为补充</p>
+        </div>
+      </div>
+
+      <div class="yb-story-grid">
+        <article class="yb-story">
+          <h3>拍下来的，和他记住的，可能不是同一件事</h3>
+          <p>我以为他会记得那天的大雨，结果他记住的是我蹲下来替他卷裤脚时，路边一只搬家的小蚂蚁。影像帮我们保留了两种真实：镜头里的，和他心里的。</p>
+          <p class="yb-story-from">—— 林小满，写于第 3 季剪辑间隙</p>
+        </article>
+        <article class="yb-story">
+          <h3>不要急着让他「说完整」</h3>
+          <p>三岁孩子说话像在拼图，主谓宾常常只剩两片。我们试过等三秒不接话，他自己就把剩下的补上了。语言不是被教会，而是在被耐心等待中长出来的。</p>
+          <p class="yb-story-from">—— 说话实验室，语言启蒙手记</p>
+        </article>
+        <article class="yb-story">
+          <h3>入园第五天，我在门口站了很久</h3>
+          <p>他没有回头，我反而有点失落。回家翻看前四天的素材，才发现每一条都写着我自己的紧张。原来适应的不只是孩子，还有送他去的那个人。</p>
+          <p class="yb-story-from">—— 七月与北北，入园适应期记录</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 榜单 ============ -->
+  <section class="yb-sec" id="yb-rank">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">Ranking · 数据榜单</span>
+          <h2 class="yb-sec-title">社区热度与口碑速览</h2>
+          <p class="yb-sec-sub">数据每周一更新，来源为站内真实互动与收藏行为</p>
+        </div>
+      </div>
+
+      <div class="yb-rank">
+        <div class="yb-rank-box">
+          <h3>本周热度榜</h3>
+          <div class="yb-rank-row"><span class="yb-rank-no">1</span><span class="yb-rank-name">送到门口第 5 天，他第一次没有回头</span><span class="yb-rank-val">5,916</span></div>
+          <div class="yb-rank-row"><span class="yb-rank-no">2</span><span class="yb-rank-name">一个纸箱，一下午，他拥有了自己的小房子</span><span class="yb-rank-val">4,271</span></div>
+          <div class="yb-rank-row"><span class="yb-rank-no">3</span><span class="yb-rank-name">三岁语言爆发期：每天 10 分钟对话练习法</span><span class="yb-rank-val">3,482</span></div>
+          <div class="yb-rank-row"><span class="yb-rank-no">4</span><span class="yb-rank-name">带三岁小孩坐地铁，他把每站都背了下来</span><span class="yb-rank-val">2,073</span></div>
+        </div>
+        <div class="yb-rank-box">
+          <h3>口碑推荐榜</h3>
+          <div class="yb-rank-row"><span class="yb-rank-no">1</span><span class="yb-rank-name">他花了两分半，把鞋带绕成一个歪歪的蝴蝶结</span><span class="yb-rank-val">4.9 分</span></div>
+          <div class="yb-rank-row"><span class="yb-rank-no">2</span><span class="yb-rank-name">关灯后还要听的第三个故事</span><span class="yb-rank-val">4.8 分</span></div>
+          <div class="yb-rank-row"><span class="yb-rank-no">3</span><span class="yb-rank-name">每天早晨 7 点，他坚持自己给绿萝浇水</span><span class="yb-rank-val">4.8 分</span></div>
+          <div class="yb-rank-row"><span class="yb-rank-no">4</span><span class="yb-rank-name">捡了 17 片叶子，他说要做成一本书</span><span class="yb-rank-val">4.7 分</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 用户评价 ============ -->
+  <section class="yb-sec" id="yb-reviews">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">Voices · 用户评价</span>
+          <h2 class="yb-sec-title">来自家庭与同行的真实反馈</h2>
+          <p class="yb-sec-sub">节选自站内评论区与年度口碑调研</p>
+        </div>
+      </div>
+
+      <div class="yb-comments">
+        <article class="yb-comment">
+          <div class="yb-comment-top">
+            <span class="yb-avatar" style="background:#f97362">陈</span>
+            <div><div class="yb-comment-name">陈一一妈妈</div><div class="yb-comment-time">11/17 21:04</div></div>
+          </div>
+          <p>照着他家「每天十分钟」的方法试了两周，孩子现在会主动讲幼儿园发生了什么，虽然只讲三句话，但我已经很满足。</p>
+          <div class="yb-stars">★★★★★</div>
+        </article>
+        <article class="yb-comment">
+          <div class="yb-comment-top">
+            <span class="yb-avatar" style="background:#4fb6a4">周</span>
+            <div><div class="yb-comment-name">周老师 · 幼教</div><div class="yb-comment-time">11/16 09:40</div></div>
+          </div>
+          <p>把内容做成可以长期回看的档案，这个思路很专业。我们园里做成长手册，也借鉴了他们的分季结构。</p>
+          <div class="yb-stars">★★★★★</div>
+        </article>
+        <article class="yb-comment">
+          <div class="yb-comment-top">
+            <span class="yb-avatar" style="background:#f6b93b">大</span>
+            <div><div class="yb-comment-name">大熊家的日常</div><div class="yb-comment-time">11/15 18:22</div></div>
+          </div>
+          <p>投稿流程比想象中简单，审核意见写得很细，连背景音太响都指出来了，感觉被认真对待。</p>
+          <div class="yb-stars">★★★★☆</div>
+        </article>
+        <article class="yb-comment">
+          <div class="yb-comment-top">
+            <span class="yb-avatar" style="background:#8d7bd8">米</span>
+            <div><div class="yb-comment-name">米粒与豆子</div><div class="yb-comment-time">11/14 22:16</div></div>
+          </div>
+          <p>最打动我的是他们没有把三岁拍成童话。哭的、闹的、失败的都留着，反而让我觉得安心。</p>
+          <div class="yb-stars">★★★★★</div>
+        </article>
+        <article class="yb-comment">
+          <div class="yb-comment-top">
+            <span class="yb-avatar" style="background:#e2523f">摄</span>
+            <div><div class="yb-comment-name">自由摄影师 老吴</div><div class="yb-comment-time">11/13 11:05</div></div>
+          </div>
+          <p>从一个从业者角度看，他们把家庭纪实的画质标准提上去了，修复旧素材那几集技术含量不低。</p>
+          <div class="yb-stars">★★★★★</div>
+        </article>
+        <article class="yb-comment">
+          <div class="yb-comment-top">
+            <span class="yb-avatar" style="background:#c98a5c">半</span>
+            <div><div class="yb-comment-name">半糖爸</div><div class="yb-comment-time">11/12 20:30</div></div>
+          </div>
+          <p>希望以后能多来点爸爸视角的内容，我们家是我在带，看的基本都是妈妈视角，有点想找同款。</p>
+          <div class="yb-stars">★★★★☆</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 企业动态 ============ -->
+  <section class="yb-sec" id="yb-update">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">News · 企业动态</span>
+          <h2 class="yb-sec-title">官方发布与内容更新</h2>
+          <p class="yb-sec-sub">品牌最新动向，每月至少更新一次</p>
+        </div>
+      </div>
+
+      <div class="yb-loglist">
+        <div class="yb-log">
+          <div class="yb-log-date">2026-11-18</div>
+          <div>
+            <h4>第 3 季「日常影像集」新增 6 支原创短片</h4>
+            <p>覆盖清晨浇花、厨房揉面、地铁出行等主题，均已完成画质与隐私审核，可在焦点内容区查看。</p>
+          </div>
+        </div>
+        <div class="yb-log">
+          <div class="yb-log-date">2026-11-10</div>
+          <div>
+            <h4>创作者扶持计划第 6 期名单公布</h4>
+            <p>新增 12 位签约作者，方向涵盖家庭纪实、亲子手作与语言启蒙，后续将参与三个专题企划共创。</p>
+          </div>
+        </div>
+        <div class="yb-log">
+          <div class="yb-log-date">2026-10-28</div>
+          <div>
+            <h4>「小小探索家」第 4 批家庭报名开放</h4>
+            <p>本次开放 200 组名额，报名需提交一段 1 分钟以内的家庭日常素材，用于企划分组参考。</p>
+          </div>
+        </div>
+        <div class="yb-log">
+          <div class="yb-log-date">2026-10-15</div>
+          <div>
+            <h4>官方网站完成高清播放与无障碍优化</h4>
+            <p>全站视频支持更高码率选项，同时补充键盘导航与图片替代文本，提升使用体验与内容可及性。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="yb-sec" id="yb-faq">
+    <div class="yb-wrap">
+      <div class="yb-sec-head">
+        <div>
+          <span class="yb-eyebrow">Help · 帮助中心</span>
+          <h2 class="yb-sec-title">常见问题</h2>
+          <p class="yb-sec-sub">关于品牌、投稿与内容使用的高频疑问</p>
+        </div>
+      </div>
+
+      <div class="yb-faq">
+        <details open>
+          <summary>「悠宝三岁全集」到底是什么内容？</summary>
+          <p>它是一套围绕三岁儿童成长记录展开的原创影像档案，包含日常记录、成长故事、实用教程与手作内容，由品牌编辑部与签约创作者共同持续更新，可在官方网站按主题浏览。</p>
+        </details>
+        <details>
+          <summary>普通家庭可以投稿自己的影像吗？</summary>
+          <p>可以。点击页面中的「我要投稿」提交基本信息与素材链接，编辑部会在 5 个工作日内反馈。我们会重点看内容是否真实、是否获得监护人同意，以及画质是否达到基本要求。</p>
+        </details>
+        <details>
+          <summary>孩子的隐私如何保护？</summary>
+          <p>所有投稿需由监护人确认授权，可要求隐藏真实姓名、学校与具体住址等敏感信息。上线前我们会逐条检查背景画面与字幕，必要时进行模糊或裁剪处理。</p>
+        </details>
+        <details>
+          <summary>内容更新节奏是怎样的？</summary>
+          <p>常态更新为每周 2 至 4 支短片，专题企划按季推进。大型企划的进展会发布在企业动态区，重要节点也会通过顶部公告条同步。</p>
+        </details>
+        <details>
+          <summary>是否接受品牌与机构合作？</summary>
+          <p>我们欢迎与儿童用品、亲子空间、教育机构等方向的内容合作，但坚持内容与商业分开标注。合作请通过页脚的联系方式沟通，我们会在 3 个工作日内回复。</p>
+        </details>
+        <details>
+          <summary>可以转载或二次使用页面内容吗？</summary>
+          <p>页面内影像均为原创或已获授权，转载需提前取得书面许可并注明来源。个人非商业分享可直接使用站内分享按钮生成的说明文字。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 联系 CTA ============ -->
+  <section class="yb-sec" id="yb-contact">
+    <div class="yb-wrap">
+      <div class="yb-cta">
+        <div>
+          <h2>把你家的<span>三岁</span>，也认真地记录下来</h2>
+          <p>无论是一段手机里的碎片，还是一整季的完整素材，我们都愿意帮你整理成可长期保存的成长影像。品牌官网长期开放投稿与共创入口，期待与更多家庭一起，把这一年留下来。</p>
+          <div class="yb-cta-btns">
+            <button class="yb-btn yb-btn-amber" data-modal="ybModalSubmit">立即投稿</button>
+            <button class="yb-btn yb-btn-outline" data-modal="ybModalShare">分享品牌页</button>
+            <button class="yb-btn yb-btn-outline" data-modal="ybModalFeedback">意见反馈</button>
+          </div>
+        </div>
+        <div class="yb-contact-card">
+          <div class="yb-kv"><span>品牌名称</span><b>悠宝三岁全集</b></div>
+          <div class="yb-kv"><span>合作邮箱</span><b>studio@youbao-family.cn</b></div>
+          <div class="yb-kv"><span>投稿咨询</span><b>工作日 10:00 – 18:00</b></div>
+          <div class="yb-kv"><span>办公地址</span><b>杭州市拱墅区影像园 3 号楼</b></div>
+          <div class="yb-kv"><span>内容审核</span><b>5 个工作日内反馈</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="yb-footer">
+  <div class="yb-wrap">
+    <div class="yb-footer-grid">
+      <div>
+        <div class="yb-footer-brand">
+          <span class="yb-logo-mark">悠</span>
+          <strong>悠宝三岁全集</strong>
+        </div>
+        <p>专注三岁儿童成长记录的原创视频品牌，以真实、温暖、专业为底色，持续运营高品质亲子影像内容生态。官方网站为企业与家庭提供内容展示、投稿共创与品牌合作入口。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <a href="#yb-focus">焦点内容</a>
+        <a href="#yb-videos">热门视频流</a>
+        <a href="#yb-feature">专题企划</a>
+        <a href="#yb-story">成长随笔</a>
+        <a href="#yb-rank">数据榜单</a>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <a href="#yb-about">品牌解析</a>
+        <a href="#yb-makers">创作者矩阵</a>
+        <a href="#yb-update">企业动态</a>
+        <a href="#yb-faq">帮助中心</a>
+        <a href="#yb-contact">联系我们</a>
+      </div>
+      <div>
+        <h4>参与方式</h4>
+        <a href="#" data-modal="ybModalSubmit">我要投稿</a>
+        <a href="#" data-modal="ybModalShare">分享品牌页</a>
+        <a href="#" data-modal="ybModalFeedback">意见反馈</a>
+        <a href="#yb-contact">品牌合作</a>
+      </div>
+    </div>
+    <div class="yb-footer-bottom">
+      <span>© 2026 悠宝三岁全集 官方网站 · 版权所有 · 持续运营中</span>
+      <span>浙ICP备2026011888号-3 · 浙公网安备 33010502001188号</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ 弹窗：投稿 ============ -->
+<div class="yb-modal-mask" id="ybModalSubmit" role="dialog" aria-modal="true" aria-labelledby="ybSubmitTitle">
+  <div class="yb-modal">
+    <button class="yb-modal-close" data-close aria-label="关闭">✕</button>
+    <h3 id="ybSubmitTitle">投稿你的成长影像</h3>
+    <p class="yb-modal-sub">提交后 5 个工作日内，编辑部会通过邮箱与你联系。</p>
+    <label for="ybSubName">称呼</label>
+    <input id="ybSubName" type="text" placeholder="如：陈一一妈妈">
+    <label for="ybSubMail">联系邮箱</label>
+    <input id="ybSubMail" type="email" placeholder="用于接收审核结果">
+    <label for="ybSubType">内容类型</label>
+    <select id="ybSubType">
+      <option>日常记录</option>
+      <option>成长故事</option>
+      <option>教程干货</option>
+      <option>城市探索</option>
+      <option>手作DIY</option>
+    </select>
+    <label for="ybSubDesc">内容简介</label>
+    <textarea id="ybSubDesc" placeholder="简单介绍素材内容、拍摄时间与授权情况"></textarea>
+    <button class="yb-btn yb-btn-main" id="ybSubmitSend">提交投稿</button>
+  </div>
+</div>
+
+<!-- ============ 弹窗：分享 ============ -->
+<div class="yb-modal-mask" id="ybModalShare" role="dialog" aria-modal="true" aria-labelledby="ybShareTitle">
+  <div class="yb-modal">
+    <button class="yb-modal-close" data-close aria-label="关闭">✕</button>
+    <h3 id="ybShareTitle">分享品牌页</h3>
+    <p class="yb-modal-sub">把「悠宝三岁全集」推荐给身边正在记录孩子成长的家庭。</p>
+    <div class="yb-share-row">
+      <button data-share="微信">微信</button>
+      <button data-share="微博">微博</button>
+      <button data-share="QQ">QQ</button>
+      <button data-share="家庭群">家庭群</button>
+    </div>
+    <button class="yb-btn yb-btn-ghost" id="ybCopyLink" style="width:100%;margin-top:16px;">复制页面链接</button>
+  </div>
+</div>
+
+<!-- ============ 弹窗：反馈 ============ -->
+<div class="yb-modal-mask" id="ybModalFeedback" role="dialog" aria-modal="true" aria-labelledby="ybFbTitle">
+  <div class="yb-modal">
+    <button class="yb-modal-close" data-close aria-label="关闭">✕</button>
+    <h3 id="ybFbTitle">意见与反馈</h3>
+    <p class="yb-modal-sub">你的每一条建议，都会进入品牌内容评审流程。</p>
+    <label for="ybFbType">反馈类型</label>
+    <select id="ybFbType">
+      <option>内容建议</option>
+      <option>使用体验</option>
+      <option>隐私相关</option>
+      <option>合作咨询</option>
+    </select>
+    <label for="ybFbText">具体描述</label>
+    <textarea id="ybFbText" placeholder="请尽量描述清楚，方便我们跟进"></textarea>
+    <button class="yb-btn yb-btn-main" id="ybFbSend">提交反馈</button>
+  </div>
+</div>
+
+<!-- ============ 弹窗：作者 ============ -->
+<div class="yb-modal-mask" id="ybModalAuthor" role="dialog" aria-modal="true" aria-labelledby="ybAuthorName">
+  <div class="yb-modal">
+    <button class="yb-modal-close" data-close aria-label="关闭">✕</button>
+    <h3 id="ybAuthorName">作者档案</h3>
+    <p class="yb-modal-sub" id="ybAuthorRole">品牌签约创作者</p>
+    <p style="font-size:13.3px;color:#5a5157;line-height:1.85;" id="ybAuthorDesc"></p>
+    <button class="yb-btn yb-btn-main" data-close>知道了</button>
+  </div>
+</div>
+
+<div class="yb-toast" id="ybToast" role="status" aria-live="polite"></div>
+<button class="yb-top" id="ybTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Toast ---------- */
+  var toastEl = document.getElementById('ybToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-on'); }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('ybBurger');
+  var mobileNav = document.getElementById('ybMobileNav');
+  burger.addEventListener('click', function(){
+    var open = mobileNav.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    burger.textContent = open ? '✕' : '☰';
+  });
+  mobileNav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      mobileNav.classList.remove('is-open');
+      burger.textContent = '☰';
+      burger.setAttribute('aria-expanded','false');
+    });
+  });
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 1024){
+      mobileNav.classList.remove('is-open');
+      burger.textContent = '☰';
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('ybSearchInput');
+  var searchTip = document.getElementById('ybSearchTip');
+  var searchKeys = ['日常记录','语言启蒙','入园适应','亲子手作','城市探索','旧影像修复','睡前故事','积木观察'];
+  var searchTimer = null;
+  searchInput.addEventListener('input', function(){
+    var v = searchInput.value.trim();
+    clearTimeout(searchTimer);
+    if(!v){
+      searchTip.classList.remove('is-on');
+      return;
+    }
+    searchTimer = setTimeout(function(){
+      var hit = searchKeys.filter(function(k){ return k.indexOf(v) !== -1; });
+      if(hit.length){
+        searchTip.innerHTML = '找到 ' + hit.length + ' 个相关主题：' + hit.join('、') + '，可在下方视频流中筛选查看。';
+      }else{
+        searchTip.textContent = '暂无完全匹配的条目，试试「日常记录」「城市探索」等关键词。';
+      }
+      searchTip.classList.add('is-on');
+    }, 260);
+  });
+  document.getElementById('ybSearchForm').addEventListener('submit', function(){
+    var v = searchInput.value.trim();
+    if(!v){ toast('请输入搜索关键词'); return; }
+    toast('已为你筛选「' + v + '」相关内容');
+    document.getElementById('yb-videos').scrollIntoView({behavior:'smooth'});
+  });
+  document.addEventListener('click', function(e){
+    if(!e.target.closest('.yb-search')) searchTip.classList.remove('is-on');
+  });
+
+  /* ---------- 标签筛选 ---------- */
+  var filter = document.getElementById('ybFilter');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#ybVideoGrid .yb-vitem'));
+  filter.addEventListener('click', function(e){
+    var btn = e.target.closest('.yb-chip');
+    if(!btn) return;
+    filter.querySelectorAll('.yb-chip').forEach(function(b){ b.classList.remove('is-active'); });
+    btn.classList.add('is-active');
+    var cat = btn.getAttribute('data-cat');
+    var shown = 0;
+    cards.forEach(function(c){
+      var ok = (cat === 'all') || (c.getAttribute('data-cat') === cat);
+      c.style.display = ok ? 'flex' : 'none';
+      if(ok) shown++;
+    });
+    toast('已筛选出 ' + shown + ' 支短片');
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.addEventListener('click', function(e){
+    var like = e.target.closest('.yb-like');
+    if(like){
+      var numEl = like.querySelector('span');
+      var n = parseInt(numEl.textContent.replace(/,/g,''), 10) || 0;
+      if(like.classList.toggle('is-liked')){
+        n++; like.querySelector('span').textContent = n.toLocaleString();
+        like.firstChild.textContent = '♥ ';
+        toast('已点赞，感谢支持原创内容');
+      }else{
+        n--; like.querySelector('span').textContent = n.toLocaleString();
+        like.firstChild.textContent = '♡ ';
+      }
+      return;
+    }
+    var save = e.target.closest('.yb-save');
+    if(save){
+      if(save.classList.toggle('is-saved')){
+        save.textContent = '★';
+        toast('已收藏到「我的成长影像」');
+      }else{
+        save.textContent = '☆';
+        toast('已取消收藏');
+      }
+      return;
+    }
+    var share = e.target.closest('.yb-share');
+    if(share){
+      openModal('ybModalShare');
+    }
+  });
+
+  /* ---------- 弹窗通用 ---------- */
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(m) m.classList.add('is-on');
+  }
+  function closeAllModal(){
+    document.querySelectorAll('.yb-modal-mask.is-on').forEach(function(m){ m.classList.remove('is-on'); });
+  }
+  document.querySelectorAll('[data-modal]').forEach(function(el){
+    el.addEventListener('click', function(e){
+      e.preventDefault();
+      openModal(el.getAttribute('data-modal'));
+    });
+  });
+  document.querySelectorAll('[data-close]').forEach(function(el){
+    el.addEventListener('click', closeAllModal);
+  });
+  document.querySelectorAll('.yb-modal-mask').forEach(function(mask){
+    mask.addEventListener('click', function(e){
+      if(e.target === mask) closeAllModal();
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeAllModal();
+  });
+
+  /* ---------- 作者档案 ---------- */
+  var authorData = {
+    '林小满': { role:'家庭纪实导演 · 品牌首批签约作者', desc:'从业九年，专注家庭纪实与儿童成长记录。主张不打断、不摆拍的观察式拍摄，累计在站内发布 126 支原创短片，其中「日常影像集」系列被多个家庭作为记录参考。' },
+    '说话实验室': { role:'语言启蒙内容组 · 三人内容团队', desc:'由三位幼教从业者组成，长期研究三岁阶段的语言发展与亲子对话方法。每条视频均配有可执行的步骤说明，避免空泛建议，是站内教程类内容的核心创作者之一。' },
+    '七月与北北': { role:'成长故事记录者 · 妈妈创作者', desc:'用一台旧相机记录孩子入园、搬家、生病与和好的过程。文字与影像并重，坚持真实不修饰，其入园适应期系列在社区获得大量共鸣与讨论。' },
+    '咔嗒手作间': { role:'亲子手作创作者 · 安全测试员', desc:'把家变成工作台，用纸箱、木片与旧布制作玩具。所有教程都经过三岁儿童实际测试，并标注工具安全等级，适合希望陪孩子动手的家庭参考。' }
+  };
+  document.querySelectorAll('.yb-maker-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-author');
+      var d = authorData[name];
+      if(!d) return;
+      document.getElementById('ybAuthorName').textContent = name;
+      document.getElementById('ybAuthorRole').textContent = d.role;
+      document.getElementById('ybAuthorDesc').textContent = d.desc;
+      openModal('ybModalAuthor');
+    });
+  });
+
+  /* ---------- 复制链接 & 分享 ---------- */
+  document.getElementById('ybCopyLink').addEventListener('click', function(){
+    var text = '悠宝三岁全集 · 亲子成长影像品牌官方网站';
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        toast('链接说明已复制，可粘贴给家人');
+      }).catch(function(){
+        toast('复制失败，可手动分享本页');
+      });
+    }else{
+      toast('当前环境不支持自动复制，请手动分享');
+    }
+  });
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      toast('已生成「' + btn.getAttribute('data-share') + '」分享文案');
+    });
+  });
+
+  /* ---------- 表单提交 ---------- */
+  document.getElementById('ybSubmitSend').addEventListener('click', function(){
+    var name = document.getElementById('ybSubName').value.trim();
+    var mail = document.getElementById('ybSubMail').value.trim();
+    if(!name){ toast('请填写称呼'); return; }
+    if(!mail || mail.indexOf('@') === -1){ toast('请填写有效邮箱'); return; }
+    closeAllModal();
+    toast('投稿已提交，编辑部将在 5 个工作日内联系你');
+    document.getElementById('ybSubName').value = '';
+    document.getElementById('ybSubMail').value = '';
+    document.getElementById('ybSubDesc').value = '';
+  });
+  document.getElementById('ybFbSend').addEventListener('click', function(){
+    var txt = document.getElementById('ybFbText').value.trim();
+    if(txt.length < 5){ toast('请再多写几个字，方便我们跟进'); return; }
+    closeAllModal();
+    toast('反馈已收到，感谢你帮助品牌做得更好');
+    document.getElementById('ybFbText').value = '';
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById('ybTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 480) topBtn.classList.add('is-on');
+    else topBtn.classList.remove('is-on');
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var stats = document.querySelectorAll('.yb-stat b');
+  var played = false;
+  function playStats(){
+    if(played) return;
+    var trigger = document.querySelector('.yb-stats');
+    if(!trigger) return;
+    var rect = trigger.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 60){
+      played = true;
+      stats.forEach(function(el){
+        var raw = el.textContent;
+        var isWan = raw.indexOf('万') !== -1;
+        var target = parseFloat(raw.replace(/[^\d.]/g, ''));
+        if(isNaN(target)) return;
+        var start = 0, dur = 900, t0 = null;
+        function step(ts){
+          if(!t0) t0 = ts;
+          var p = Math.min((ts - t0) / dur, 1);
+          var val = target * p;
+          if(isWan){
+            el.textContent = val.toFixed(1) + '万';
+          }else if(target >= 1000){
+            el.textContent = Math.floor(val).toLocaleString();
+          }else{
+            el.textContent = val.toFixed(1);
+          }
+          if(p < 1) requestAnimationFrame(step);
+          else el.textContent = raw;
+        }
+        requestAnimationFrame(step);
+      });
+    }
+  }
+  window.addEventListener('scroll', playStats, {passive:true});
+  window.addEventListener('load', playStats);
+
+})();
+</script>
+</body>
+  </html>
